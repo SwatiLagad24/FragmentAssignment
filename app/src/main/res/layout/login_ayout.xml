@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignIn Options"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="50sp"
+
+        />
+    <LinearLayout
+        android:layout_marginTop="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/google"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGoogle"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:text="login with Google"
+            android:drawableTint="@color/white"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20sp"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/git"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGit"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:text="login with Git"
+            android:drawableTint="@color/white"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20sp"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/facebook"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnFacebook"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:text="login with Facebook"
+            android:drawableTint="@color/white"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/twitter"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTwitter"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:text="login with Twitter"
+            android:drawableTint="@color/white"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
