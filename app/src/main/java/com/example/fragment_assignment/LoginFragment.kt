@@ -1,5 +1,4 @@
 package com.example.fragment_assignment
-
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,15 +7,14 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.fragment_assignment.databinding.LoginAyoutBinding
 
-class loginFragment:Fragment (){
+class LoginFragment:Fragment() {
+    private lateinit var binding : LoginAyoutBinding
 
-        private lateinit var binding : LoginAyoutBinding
-
-        override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
-        ): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
 
 
         return super.onCreateView(inflater, container, savedInstanceState)
@@ -41,4 +39,5 @@ class loginFragment:Fragment (){
 
         return binding.root
     }
+
 }
