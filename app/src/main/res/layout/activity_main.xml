@@ -12,6 +12,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/loginFragment1"
-            android:name="com.example.fragment_assignment.loginFragment"/>
+            android:name="com.example.fragment_assignment.LoginFragment"/>
 
 </LinearLayout>
