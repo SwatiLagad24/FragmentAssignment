@@ -10,6 +10,12 @@ import com.example.fragment_assignment.databinding.LoginToFragmentBinding
 class LoginToFragment:Fragment() {
     private lateinit var binding: LoginToFragmentBinding
 
+    var data : String? = null
+        set(value) {
+            field = value
+            binding.txtData.text = value
+        }
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -26,6 +32,7 @@ class LoginToFragment:Fragment() {
             inputBundle.putInt("usercode", 24)
 
             homeFragment.arguments = inputBundle
+            homeFragment.onDataListener=MyOnDataListener()
 
             parentFragmentManager.beginTransaction()
                 .add(R.id.mainContainer, homeFragment, null)
@@ -34,5 +41,12 @@ class LoginToFragment:Fragment() {
 
         }
         return binding.root
+
+}
+    inner class MyOnDataListener : HomeFragment.OnDataListener {
+        override fun onData(data: String) {
+            this@LoginToFragment.data = data
+
+        }
     }
 }
