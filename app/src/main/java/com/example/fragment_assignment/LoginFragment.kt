@@ -17,7 +17,7 @@ class LoginFragment:Fragment() {
     ): View? {
 
 
-        return super.onCreateView(inflater, container, savedInstanceState)
+      //  return super.onCreateView(inflater, container, savedInstanceState)
         binding= LoginAyoutBinding.inflate(layoutInflater)
 
 
