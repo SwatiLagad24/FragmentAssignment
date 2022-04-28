@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import com.example.fragment_assignment.databinding.LoginAyoutBinding
 
 class LoginFragment:Fragment() {
@@ -23,6 +24,13 @@ class LoginFragment:Fragment() {
 
         binding.btnGoogle.setOnClickListener {
             Toast.makeText(context, "Loging In With Google", Toast.LENGTH_LONG).show()
+            var loginToFragment = LoginToFragment()
+
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.mainContainer, loginToFragment, null)
+                .addToBackStack(null)
+                .commit()
+
         }
 
         binding.btnFacebook.setOnClickListener {
