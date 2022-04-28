@@ -11,7 +11,7 @@ import android.widget.Toast
 class MainActivity : AppCompatActivity() {
 
     private lateinit var loginFragment1 : LoginFragment
-    private lateinit var loginToFragment: LoginToFragment
+//    private lateinit var loginToFragment: LoginToFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

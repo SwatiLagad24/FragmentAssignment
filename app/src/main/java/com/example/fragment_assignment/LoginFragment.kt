@@ -16,15 +16,14 @@ class LoginFragment:Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+var loginToFragment=LoginToFragment()
 
 
-      //  return super.onCreateView(inflater, container, savedInstanceState)
         binding= LoginAyoutBinding.inflate(layoutInflater)
 
 
         binding.btnGoogle.setOnClickListener {
             Toast.makeText(context, "Loging In With Google", Toast.LENGTH_LONG).show()
-            var loginToFragment = LoginToFragment()
 
             parentFragmentManager.beginTransaction()
                 .replace(R.id.mainContainer, loginToFragment, null)
@@ -34,15 +33,31 @@ class LoginFragment:Fragment() {
         }
 
         binding.btnFacebook.setOnClickListener {
+
             Toast.makeText(context, "Loging In With Facebook", Toast.LENGTH_LONG).show()
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.mainContainer, loginToFragment, null)
+                .addToBackStack(null)
+                .commit()
+
         }
 
         binding.btnGit.setOnClickListener {
             Toast.makeText(context, "Loging In With GitHub", Toast.LENGTH_LONG).show()
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.mainContainer, loginToFragment, null)
+                .addToBackStack(null)
+                .commit()
+
         }
 
         binding.btnTwitter.setOnClickListener {
             Toast.makeText(context, "Loging In With Twitter", Toast.LENGTH_LONG).show()
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.mainContainer, loginToFragment, null)
+                .addToBackStack(null)
+                .commit()
+
         }
 
         return binding.root
