@@ -40,6 +40,21 @@ class LoginToFragment:Fragment() {
                 .commit()
 
         }
+/*        binding.btnLogin.setOnClickListener{
+
+            var productsFragment = ProductsFragment()
+
+            var inputBundle = Bundle()
+            inputBundle.putString("username", binding.edtUsername.text.toString())
+            inputBundle.putInt("usercode", 24)
+
+
+            parentFragmentManager.beginTransaction()
+                .add(R.id.mainContainer, productsFragment, null)
+                .addToBackStack(null)
+                .commit()
+
+        }*/
         return binding.root
 
 }

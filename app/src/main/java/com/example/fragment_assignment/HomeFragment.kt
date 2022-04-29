@@ -11,9 +11,11 @@ class HomeFragment:Fragment() {
     private lateinit var binding:HomeFragmentBinding
     private var userName : String? = null
     private var userCode : Int? = null
-interface OnDataListener{//creating interface to send dta back to another fragment
+
+
+    interface OnDataListener{//creating interface to send dta back to another fragment
     fun onData(data:String)//creating var data of type string
-}
+        }
     var onDataListener:OnDataListener?=null//creating object of interfce can be null
 
     override fun onCreateView(

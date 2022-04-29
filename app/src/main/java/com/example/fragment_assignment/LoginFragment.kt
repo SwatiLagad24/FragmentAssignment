@@ -16,11 +16,21 @@ class LoginFragment:Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-var loginToFragment=LoginToFragment()
+        var loginToFragment=LoginToFragment()
 
+        var productsFragment=ProductsFragment()
 
         binding= LoginAyoutBinding.inflate(layoutInflater)
 
+        binding.btnInsta.setOnClickListener {
+            Toast.makeText(context, "Loging In With Instagram", Toast.LENGTH_LONG).show()
+
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.mainContainer, productsFragment, null)
+                .addToBackStack(null)
+                .commit()
+
+        }
 
         binding.btnGoogle.setOnClickListener {
             Toast.makeText(context, "Loging In With Google", Toast.LENGTH_LONG).show()
