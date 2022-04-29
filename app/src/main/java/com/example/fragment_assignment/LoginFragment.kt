@@ -1,5 +1,7 @@
 package com.example.fragment_assignment
+import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,6 +9,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.example.fragment_assignment.databinding.LoginAyoutBinding
+import com.google.android.material.snackbar.Snackbar
 
 class LoginFragment:Fragment() {
     private lateinit var binding : LoginAyoutBinding
@@ -43,8 +46,22 @@ class LoginFragment:Fragment() {
         }
 
         binding.btnFacebook.setOnClickListener {
+            Snackbar.make(
 
-            Toast.makeText(context, "Loging In With Facebook", Toast.LENGTH_LONG).show()
+                binding.root,
+                "Loging In With Facebook",
+                Snackbar.LENGTH_LONG
+            ).setBackgroundTint(Color.GRAY)
+                .setTextColor(Color.BLUE)
+                .setAction(
+
+                        "View",{
+                            Log.e("tag","View action is taken")
+                    }
+                )
+                .show()
+
+            //Toast.makeText(context, "Loging In With Facebook", Toast.LENGTH_LONG).show()
             parentFragmentManager.beginTransaction()
                 .replace(R.id.mainContainer, loginToFragment, null)
                 .addToBackStack(null)
