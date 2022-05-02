@@ -14,8 +14,4 @@
             android:layout_height="wrap_content"
             android:id="@+id/loginFragment1"
             android:name="com.example.fragment_assignment.LoginFragment"/>
-
-
-
-
 </FrameLayout>

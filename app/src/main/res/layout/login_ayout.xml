@@ -147,6 +147,18 @@
             android:backgroundTint="@color/white"
             android:textColor="@color/black"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSimpleNotification"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:text="Check Notifications"
+            android:drawableTint="@color/white"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+
 
 
     </LinearLayout>
